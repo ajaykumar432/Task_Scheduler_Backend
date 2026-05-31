@@ -62,12 +62,21 @@ scoreme-scheduler/
 npm run install:all
 ```
 
-### 2. Configure environment
+### 2. Configure environment backend
 
 ```bash
-cd backend
-cp .env.example .env
-# Edit .env — set MONGODB_URI, JWT_SECRET
+PORT=5000
+NODE_ENV=development
+
+# MongoDB
+MONGODB_URI=""
+
+# JWT
+JWT_SECRET=your_super_secret_jwt_key_change_in_production
+JWT_EXPIRES_IN=7d
+
+# CORS
+CLIENT_URL=http://localhost:5176
 ```
 
 ### 3. Run in development
