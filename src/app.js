@@ -46,6 +46,13 @@ if (process.env.NODE_ENV === 'development') {
 app.get('/api/health', (req, res) => {
   res.json({ success: true, message: 'ScoreMe Scheduler API is running', timestamp: new Date() });
 });
+// Root Route
+app.get('/', (req, res) => {
+  res.json({
+    success: true,
+    message: 'Task Scheduler Backend Running'
+  });
+});
 
 // Routes
 app.use('/api/auth', authRoutes);
