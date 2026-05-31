@@ -72,7 +72,7 @@ NODE_ENV=development
 MONGODB_URI=""
 
 # JWT
-JWT_SECRET=your_super_secret_jwt_key_change_in_production
+JWT_SECRET=your_super_secret_jwt_key
 JWT_EXPIRES_IN=7d
 
 # CORS
